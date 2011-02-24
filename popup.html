@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Recipe Search</title>
+  <meta charset="utf-8">
+ </head>
+ <body style="width:250px; background: #aad5b3">
+   
+   <form action="#" onsubmit="doSearch(); return false;">
+     <div>
+       <input type="hidden" name="cx" value="008586021709508157834:b1tisnzw9ws" />
+       <input type="hidden" name="ie" value="UTF-8" />
+       <input type="text" name="q" size="31" autofocus="true"/>
+       <input type="submit" name="sa" value="Search" />
+     </div>
+   </form>
+   
+  <script>
+function doSearch() {
+  var url = 'http://www.google.com/cse?' +
+    'cx=' + document.forms[0].cx.value + '&' +
+    'ie=' + document.forms[0].ie.value + '&' + 
+    'q=' + document.forms[0].q.value + '&' + 
+    'sa=' + document.forms[0].sa.value;
+  chrome.tabs.create({url: url});
+  return false;
+}
+ </script>
+ </body>
+</html>
+     

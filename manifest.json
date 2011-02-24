@@ -1,0 +1,13 @@
+{
+  "name": "Paleo & Primal Recipe Search",
+  "version": "0.6",
+  "description": "Easily search the top primal and paleo recipe blogs for recipe ideas.",
+  "permissions": ["tabs"],
+  "icons": {
+      "128": "icon_128.png" },
+  "browser_action": {
+      "default_title": "Search recipes",
+      "default_icon": "browser_icon.png",
+      "popup": "popup.html"
+  }
+}
